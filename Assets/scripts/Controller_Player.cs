@@ -47,7 +47,7 @@ public class Controller_Player : MonoBehaviour
                 _Player = container.AddComponent<Controller_Player>();
             }
             //Debug.Log("Player==null");
-            DontDestroyOnLoad(_Player);
+            //DontDestroyOnLoad(_Player);
         }
         else
         {
@@ -128,5 +128,6 @@ public class Controller_Player : MonoBehaviour
             lastKeyUp = false;
         }
     }
+
 
 }

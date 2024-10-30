@@ -236,7 +236,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -258,9 +258,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5bfa021e4483e34f9c0e6fca8f6b52c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xLimit: 30
-  yLimit: 20
+  xLimit: 20
+  yLimit: 30
   projectileSpeed: 20
+  bulletSpawnPoint: {fileID: 0}
   rb: {fileID: 5626232081498759806}
 --- !u!54 &5626232081498759806
 Rigidbody:

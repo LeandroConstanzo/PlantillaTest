@@ -6,7 +6,7 @@ using UnityEngine;
 public class Controller_Projectile : Projectile
 {
     public float projectileSpeed;
-
+    public Transform bulletSpawnPoint;
     public Rigidbody rb;
 
     void Start()
@@ -23,6 +23,7 @@ public class Controller_Projectile : Projectile
 
     public virtual void ProjectileDirection()
     {
-        rb.velocity = new Vector3(1 * projectileSpeed, rb.velocity.y, 0);
+        rb.velocity = new Vector3(1 * projectileSpeed, rb.velocity.y, rb.velocity.x);
+      
     }
 }
